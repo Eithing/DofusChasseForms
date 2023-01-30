@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)tesseract\4.1.1\build\Tesseract.targets" Condition="Exists('$(NuGetPackageRoot)tesseract\4.1.1\build\Tesseract.targets')" />
+    <Import Project="$(NuGetPackageRoot)refit\6.3.2\buildTransitive\netstandard2.0\refit.targets" Condition="Exists('$(NuGetPackageRoot)refit\6.3.2\buildTransitive\netstandard2.0\refit.targets')" />
+    <Import Project="$(NuGetPackageRoot)emgu.cv.runtime.windows\4.4.0.4099\build\Emgu.CV.runtime.windows.targets" Condition="Exists('$(NuGetPackageRoot)emgu.cv.runtime.windows\4.4.0.4099\build\Emgu.CV.runtime.windows.targets')" />
+  </ImportGroup>
+</Project>
